@@ -28,7 +28,7 @@ jobs:
 
     - name: Execute notebook
       run: |
-        jupyter nbconvert --to notebook --execute your_notebook_name.ipynb --stdout
+        jupyter nbconvert --to notebook --execute FFMM.ipynb --stdout
 
     # Optional: Add steps to commit and push the updated CSV
     # - name: Commit and push updated data
