@@ -27,3 +27,8 @@ jobs:
       run: |
         # Reemplaza 'your_notebook_name.ipynb' con el nombre exacto de tu archivo de notebook en GitHub
         jupyter nbconvert --to notebook --execute FFMM.ipynb --stdout
+    env:
+      GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+      GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+      TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }} # Si configuraste este secreto en GitHub
+      TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}   # Si configuraste este secreto en GitHub
